@@ -18,11 +18,11 @@ www.paxagency.com
 
 body{text-align:center;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;}
 h1,h2,h3,h4 {line-height:1.2em;}
-h1 {font-size:3em; letter-spacing:-.5px;}
-h2 {font-size:2.2em;}
-h3 {font-size:2em;}
-h4 {font-size:1.7em;}
-h5 {font-size:.83em;}
+h1 {font-size:3em; letter-spacing:-.5px;margin: 0 0 .4em 0;}
+h2 {font-size:2.2em;margin: 0 0 .4em 0;}
+h3 {font-size:2em;margin: 0 0 .4em 0;}
+h4 {font-size:1.7em;margin: 0 0 .4em 0;}
+h5 {font-size:1.1em;margin: 0 0 .4em 0;}
 p,ul,blockquote,button,footer,table {font-size:18px;}
 p,ul,blockquote {text-align:left;line-height:1.6em;}
 section {max-width:1000px; margin:0 auto; display:block;}
@@ -38,16 +38,17 @@ td.w8 {width:80%;}
 td.w9 {width:90%;}
 table {width:100%;table-layout:fixed;text-align:center;border-collapse:collapse}
 table.top td{vertical-align:top;}
-table.pad td{padding:10px;}
-table.pad th{padding:10px;}
+table.pad td,table.pad th{padding:20px;}
+table.pad td:first-child,table.pad td:last-child,table.pad th:first-child,table.pad th:last-child{padding:0;}
 table.list tr:nth-child(even){background:#f2f2f2;}
 table.list thead tr {background:#f2f2f2; font-weight:400; }
 table.list {width:100%; overflow:hidden; table-layout: auto;}
 table.list td,table.list th {text-align: left;}
-table.search i {position: absolute;margin: 11px 0 0 15px;color: #aaa;font-size: 21px;}
-table.search input {padding-left:40px;}
+table.list.pad td,table.list.pad th{padding:10px;}
+table.hover {cursor:pointer;}
+table.hover tr:hover {background: #f1f7fb;}
 input,textarea{
-	border:solid thin #ccc;
+	border:solid thin #aaa;
 	padding:12px;
 	width:100%;
 	box-sizing:border-box;
@@ -61,6 +62,7 @@ button,.button {
 	padding:15px 30px;
 	text-decoration:none;
 	border:solid 2px #aaa;
+	backround:#fafafa;
 	margin:5px 0;
 	display:inline-block;
 	text-align:center;
@@ -99,7 +101,7 @@ td button {width:100%;padding:0; height:100%; border-radius:0;}
 	h2 {font-size:1.5em  !important;}
 	h3 {font-size:1.17em  !important;}
 	h4 {font-size:1em  !important;}
-	h5 {font-size:.83em  !important;}
+	h5 {font-size:.9em  !important;}
 	p,ul,blockquote,button,table {font-size:1em  !important;}
 	pad {margin:20px  !important;}
 	table td {width:auto !important;}
