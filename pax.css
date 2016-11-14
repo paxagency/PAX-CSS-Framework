@@ -36,7 +36,7 @@ td.w6 {width:60%;}
 td.w7 {width:70%;}
 td.w8 {width:80%;}
 td.w9 {width:90%;}
-table {width:100%;table-layout:fixed;text-align:center;}
+table {width:100%;table-layout:fixed;text-align:center;border-collapse:collapse}
 table.top td{vertical-align:top;}
 table.pad td{padding:10px;}
 table.pad th{padding:10px;}
