@@ -1,0 +1,109 @@
+/***************************************
+****************************************
+8888888b.     d8888Y88b   d88P
+888   Y88b   d88888 Y88b d88P
+888    888  d88P888  Y88o88P
+888   d88P d88P 888   Y888P
+8888888P" d88P  888   d888b
+888      d88P   888  d88888b
+888     d8888888888 d88P Y88b
+888    d88P     888d88P   Y88b
+
+CSS Framework V 1.0
+Copyright 2016 PAXagency
+Created by Albert Kiteck
+www.paxagency.com
+****************************************
+****************************************/
+
+body{text-align:center;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased;}
+h1,h2,h3,h4 {line-height:1.2em;}
+h1 {font-size:3em; letter-spacing:-.5px;}
+h2 {font-size:2.2em;}
+h3 {font-size:2em;}
+h4 {font-size:1.7em;}
+h5 {font-size:.83em;}
+p,ul,blockquote,button,footer,table {font-size:18px;}
+p,ul,blockquote {text-align:left;line-height:1.6em;}
+section {max-width:1000px; margin:0 auto; display:block;}
+pad {display:inline-block; margin:40px;}
+td.w1 {width:10%;}
+td.w2 {width:20%;}
+td.w3 {width:30%;}
+td.w4 {width:40%;}
+td.w5 {width:50%;}
+td.w6 {width:60%;}
+td.w7 {width:70%;}
+td.w8 {width:80%;}
+td.w9 {width:90%;}
+table {width:100%;table-layout:fixed;text-align:center;}
+table.top td{vertical-align:top;}
+table.pad td{padding:10px;}
+table.pad th{padding:10px;}
+table.list tr:nth-child(even){background:#f2f2f2;}
+table.list thead tr {background:#f2f2f2; font-weight:400; }
+table.list {width:100%; overflow:hidden; table-layout: auto;}
+table.list td,table.list th {text-align: left;}
+table.search i {position: absolute;margin: 11px 0 0 15px;color: #aaa;font-size: 21px;}
+table.search input {padding-left:40px;}
+input,textarea{
+	border:solid thin #ccc;
+	padding:12px;
+	width:100%;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+}
+button,.button {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	padding:15px 30px;
+	text-decoration:none;
+	border:solid 2px #aaa;
+	margin:5px 0;
+	display:inline-block;
+	text-align:center;
+	color:#333;
+	-webkit-transition: opacity 0.25s ease-out, color 0.25s ease-out;
+  transition: opacity 0.25s ease-out, color 0.25s ease-out;
+  -webkit-font-smoothing: antialiased;
+}
+button:hover,.button:hover {opacity:.7;}
+button:active,.button:active {opacity:.5;}
+button.block,.button.block { width:100%; padding:15px 0;}
+td button {width:100%;padding:0; height:100%; border-radius:0;}
+.left {float:left; }
+.right {float:right; }
+.hide {display:none;}
+.fixed {position:fixed;}
+.fixed.left {float:none; left:0;}
+.fixed.right {float:none; right:0;}
+.fixed.top {top:0;}
+.fixed.bottom {bottom:0;}
+
+.blue {background:#1b88f9; color:#fff; border-color:rgba(0,0,0,.2);}
+.bluelight {background:#22bcf6; color:#fff; border-color:rgba(0,0,0,.2);}
+.aqua {background:#25d6aa; color:#fff; border-color:rgba(0,0,0,.2);}
+.green {background:#8dd72e ; color:#fff; border-color:rgba(0,0,0,.2);}
+.yellow {background:#fecd34; color:#fff; border-color:rgba(0,0,0,.2);}
+.orange {background:#fd8227; color:#fff; border-color:rgba(0,0,0,.2);}
+.red {background:#fc143f; color:#fff; border-color:rgba(0,0,0,.2);}
+.pink {background:#f230a6; color:#fff; border-color:rgba(0,0,0,.2);}
+.purple {background:#7636ef; color:#fff; border-color:rgba(0,0,0,.2);}
+
+@media all and (max-width: 735px) {
+	h1,h2,h3,h4,p {letter-spacing:0  !important;}
+	h1 {font-size:2em !important;}
+	h2 {font-size:1.5em  !important;}
+	h3 {font-size:1.17em  !important;}
+	h4 {font-size:1em  !important;}
+	h5 {font-size:.83em  !important;}
+	p,ul,blockquote,button,table {font-size:1em  !important;}
+	pad {margin:20px  !important;}
+	table td {width:auto !important;}
+	table.pad td{ padding:10px  !important;}
+	table.break > tbody > tr > td,table.break > tbody > tr > th{display:block !important; padding:0  !important;}
+	td button {width:100%;padding:15px 30px;height:100%; border-radius:0;}
+	.left,.right {float:none;}
+}
