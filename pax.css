@@ -65,6 +65,7 @@ button,.button {
 	display:inline-block;
 	text-align:center;
 	color:#333;
+	cursor: pointer;
 	-webkit-transition: opacity 0.25s ease-out, color 0.25s ease-out;
   transition: opacity 0.25s ease-out, color 0.25s ease-out;
   -webkit-font-smoothing: antialiased;
