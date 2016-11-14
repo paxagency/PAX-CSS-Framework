@@ -26,7 +26,7 @@ h5 {font-size:.83em;}
 p,ul,blockquote,button,footer,table {font-size:18px;}
 p,ul,blockquote {text-align:left;line-height:1.6em;}
 section {max-width:1000px; margin:0 auto; display:block;}
-section.pad {padding:40px;}
+pad {display:inline-block; margin:40px;}
 td.w1 {width:10%;}
 td.w2 {width:20%;}
 td.w3 {width:30%;}
@@ -100,11 +100,11 @@ td button {width:100%;padding:0; height:100%; border-radius:0;}
 	h4 {font-size:1em  !important;}
 	h5 {font-size:.83em  !important;}
 	p,ul,blockquote,button,table {font-size:1em  !important;}
-	section.pad {padding:20px  !important;}
+	pad {margin:20px  !important;}
 	table td {width:auto !important;}
 	table.pad td{ padding:10px  !important;}
 	table.break > tbody > tr > td,table.break > tbody > tr > th{display:block !important; padding:0  !important;}
 	td button {width:100%;padding:15px 30px;height:100%; border-radius:0;}
-	.left,.right {float:none;}
-	.fixed {position:inline-block;}
+	.left,.right {float:none !important;}
+	.fixed {position:inline-block !important;}
 }
