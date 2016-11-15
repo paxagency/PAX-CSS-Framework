@@ -1,5 +1,6 @@
 # PAX-CSS-Framework
-Minimal &amp; Ligthweight CSS Framework
+Minimal CSS Framework
+Lightweight Grid and HTML Element System
 
-http://paxagency.com/demos/pax-css-framework/
+http://paxagency.com/css/
 
