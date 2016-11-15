@@ -26,7 +26,7 @@ h5 {font-size:1.1em;margin: 0 0 .4em 0;}
 p,ul,blockquote,button,footer,table {font-size:18px;}
 p,ul,blockquote {text-align:left;line-height:1.6em;}
 section {max-width:1000px; margin:0 auto; display:block;}
-pad {display:inline-block; display:block;margin:40px;}
+pad {display:block; display:block;margin:40px;overflow: auto;}
 td.w1 {width:10%;}
 td.w2 {width:20%;}
 td.w3 {width:30%;}
@@ -79,7 +79,6 @@ button.small,.button.small {font-size:12px !important; font-weight:bold; padding
 button:hover,.button:hover {opacity:.6;}
 button:active,.button:active {opacity:.5;}
 button.block,.button.block { width:100%; padding-left: 0; padding-right:0;}
-
 td button {width:100%;padding:0; height:100%; border-radius:0;}
 .left {float:left; }
 .right {float:right; }
@@ -90,15 +89,15 @@ td button {width:100%;padding:0; height:100%; border-radius:0;}
 .fixed.top {top:0;}
 .fixed.bottom {bottom:0;}
 
-.blue {background:#1b88f9; color:#fff; border-color:rgba(0,0,0,.3);}
-.bluelight {background:#22bcf6; color:#fff; border-color:rgba(0,0,0,.3);}
-.aqua {background:#25d6aa; color:#fff; border-color:rgba(0,0,0,.3);}
-.green {background:#8dd72e ; color:#fff; border-color:rgba(0,0,0,.3);}
-.yellow {background:#fecd34; color:#fff; border-color:rgba(0,0,0,.3);}
-.orange {background:#fd8227; color:#fff; border-color:rgba(0,0,0,.3);}
-.red {background:#fc143f; color:#fff; border-color:rgba(0,0,0,.3);}
-.pink {background:#f230a6; color:#fff; border-color:rgba(0,0,0,.3);}
-.purple {background:#7636ef; color:#fff; border-color:rgba(0,0,0,.3);}
+.blue {background:#1b88f9; color:#fff; border-color:rgba(0,0,0,.2);}
+.bluelight {background:#22bcf6; color:#fff; border-color:rgba(0,0,0,.2);}
+.aqua {background:#25d6aa; color:#fff; border-color:rgba(0,0,0,.2);}
+.green {background:#8dd72e ; color:#fff; border-color:rgba(0,0,0,.2);}
+.yellow {background:#fecd34; color:#fff; border-color:rgba(0,0,0,.2);}
+.orange {background:#fd8227; color:#fff; border-color:rgba(0,0,0,.2);}
+.red {background:#fc143f; color:#fff; border-color:rgba(0,0,0,.2);}
+.pink {background:#f230a6; color:#fff; border-color:rgba(0,0,0,.2);}
+.purple {background:#7636ef; color:#fff; border-color:rgba(0,0,0,.2);}
 
 @media all and (max-width: 735px) {
 	h1,h2,h3,h4,p {letter-spacing:0  !important;}
@@ -112,9 +111,10 @@ td button {width:100%;padding:0; height:100%; border-radius:0;}
 	table td {width:auto !important;}
 	table.pad td{ padding:10px  !important;}
 	table.break > tbody > tr > td,table.break > tbody > tr > th{display:block !important; padding:0  !important;}
+	table.list {table-layout: fixed !important}
 	button,.button {width:100% !important;padding:15px 0 !important; display: inline-block !important;}
 	button.small,.button.small {padding:10px 0 !important;}
 	.left,.right {float:none !important;}
-	table.list {table-layout: fixed !important}
 	.fixed {position:inline-block !important;}
+	img {width:100% !important;}
 }
