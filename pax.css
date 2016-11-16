@@ -70,10 +70,10 @@ button,.button {
 	text-align:center;
 	color:#333;
 	cursor: pointer;
-	-webkit-transition: opacity .4s ease;
-  -moz-transition: opacity 0.4s ease;
-  -o-transition: opacity 0.4s ease;
-  transition: opacity 0.4s ease;
+	-webkit-transition: opacity 0.25s ease-out;
+  -moz-transition: opacity 0.25s ease-out;
+  -o-transition: opacity 0.25s ease-out;
+  transition: opacity 0.25s ease-out;
 	-webkit-font-smoothing: antialiased;
 }
 button.small,.button.small {font-size:12px !important; font-weight:bold; padding:5px 30px;}
@@ -89,7 +89,6 @@ td button {width:100%;padding:0; height:100%; border-radius:0;}
 .fixed.right {float:none; right:0;}
 .fixed.top {top:0;}
 .fixed.bottom {bottom:0;}
-
 .blue {background:#1b88f9; color:#fff; border-color:rgba(0,0,0,.2);}
 .bluelight {background:#22bcf6; color:#fff; border-color:rgba(0,0,0,.2);}
 .aqua {background:#25d6aa; color:#fff; border-color:rgba(0,0,0,.2);}
