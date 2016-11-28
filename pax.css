@@ -25,7 +25,7 @@ h3 {font-size:1.8em;margin: 0 0 .4em 0;}
 h4 {font-size:1.5em;margin: 0 0 .4em 0;}
 h5 {font-size:1.1em;margin: 0 0 .4em 0;}
 p,ul,blockquote,button,footer,table {font-size:18px;}
-p,ul,blockquote {text-align:left;line-height:1.6em;}
+p,ul,blockquote,ol {text-align:left;line-height:1.6em;}
 img {max-width:100%;}
 section {max-width:960px; margin:0 auto; display:block; padding:40px; overflow:auto;}
 td.w1 {width:10%;}
