@@ -72,9 +72,9 @@ button,.button {
 	color:#333;
 	cursor: pointer;
 	-webkit-transition: opacity 0.2s ease-out;
-  -moz-transition: opacity 0.2s ease-out;
-  -o-transition: opacity 0.2s ease-out;
-  transition: opacity 0.2s ease-out;
+  	-moz-transition: opacity 0.2s ease-out;
+  	-o-transition: opacity 0.2s ease-out;
+  	transition: opacity 0.2s ease-out;
 	-webkit-font-smoothing: antialiased;
 }
 button.small,.button.small {font-size:12px !important; font-weight:bold; padding:3px 30px;}
