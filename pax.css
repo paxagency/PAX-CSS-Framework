@@ -76,9 +76,9 @@ button,.button {
 	color:#333;
 	cursor: pointer;
 	-webkit-transition: opacity 0.33s;
-  -moz-transition: opacity 0.33s;
-  -o-transition: opacity 0.33s;
-  transition: opacity 0.33s;
+  	-moz-transition: opacity 0.33s;
+  	-o-transition: opacity 0.33s;
+ 	 transition: opacity 0.33s;
 }
 button.small,.button.small {font-size:12px !important; font-weight:bold; padding:3px 30px;}
 button:hover,.button:hover {opacity:.7;}
@@ -113,8 +113,8 @@ td button {width:100%;padding:0; height:100%; border-radius:0;}
 	p,ul,blockquote,button,table {font-size:1em  !important;}
 	section {padding:20px !important;}
 	div.row > div,div.grid > div > div {width:100% !important;display:block !important; padding:0 !important}
-  div.row.pad > div,div.grid.pad > div,div.row.allpad > div,div.grid.allpad > div {padding:10px !important;}
-  div.row.stay > div,div.grid.stay > div > div {width:auto !important;display:table-cell !important; }
+	div.row.pad > div,div.grid.pad > div,div.row.allpad > div,div.grid.allpad > div {padding:10px !important;}
+	div.row.stay > div,div.grid.stay > div > div {width:auto !important;display:table-cell !important; }
 	table td {width:auto !important;}
 	table.pad td{ padding:10px  !important;}
 	table.break > tbody > tr > td,table.break > tbody > tr > th{display:block !important; padding:0  !important;}
