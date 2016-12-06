@@ -16,8 +16,8 @@ www.paxagency.com
 ****************************************
 ****************************************/
 html {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
-*, *:before, *:after {-webkit-box-sizing: inherit;-moz-box-sizing: inherit;box-sizing: inherit;}
-body{text-align:center;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased; color:#222;}
+*,*:before,*:after {-webkit-box-sizing: inherit;-moz-box-sizing: inherit;box-sizing: inherit;}
+body{text-align:center;text-rendering: optimizeLegibility;-webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;-moz-osx-font-smoothing: grayscale; color:#222;}
 h1,h2,h3,h4 {line-height:1.2em;}
 h1 {font-size:3em; letter-spacing:-.5px;margin: 0 0 .4em 0;}
 h2 {font-size:2.2em;margin: 0 0 .4em 0;}
@@ -65,7 +65,7 @@ button,.button {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	padding:15px 50px;
+	padding:14px 50px;
 	text-decoration:none;
 	font-weight: bold;
 	border:solid 1px #999;
@@ -75,15 +75,14 @@ button,.button {
 	text-align:center;
 	color:#333;
 	cursor: pointer;
-	-webkit-transition: opacity 0.2s ease-out;
-    -moz-transition: opacity 0.2s ease-out;
-    -o-transition: opacity 0.2s ease-out;
-    transition: opacity 0.2s ease-out;
-	-webkit-font-smoothing: antialiased;
+	-webkit-transition: opacity 0.33s;
+  -moz-transition: opacity 0.33s;
+  -o-transition: opacity 0.33s;
+  transition: opacity 0.33s;
 }
 button.small,.button.small {font-size:12px !important; font-weight:bold; padding:3px 30px;}
-button:hover,.button:hover {opacity:.6;}
-button:active,.button:active {opacity:.5;}
+button:hover,.button:hover {opacity:.7;}
+button:active,.button:active {opacity:.7;}
 button.block,.button.block { width:100%; padding-left: 0; padding-right:0;}
 td button {width:100%;padding:0; height:100%; border-radius:0;}
 .left {float:left;}
@@ -114,8 +113,8 @@ td button {width:100%;padding:0; height:100%; border-radius:0;}
 	p,ul,blockquote,button,table {font-size:1em  !important;}
 	section {padding:20px !important;}
 	div.row > div,div.grid > div > div {width:100% !important;display:block !important; padding:0 !important}
-    div.row.pad > div,div.grid.pad > div,div.row.allpad > div,div.grid.allpad > div {padding:10px !important;}
-    div.row.stay > div,div.grid.stay > div > div {width:auto !important;display:table-cell !important; }
+  div.row.pad > div,div.grid.pad > div,div.row.allpad > div,div.grid.allpad > div {padding:10px !important;}
+  div.row.stay > div,div.grid.stay > div > div {width:auto !important;display:table-cell !important; }
 	table td {width:auto !important;}
 	table.pad td{ padding:10px  !important;}
 	table.break > tbody > tr > td,table.break > tbody > tr > th{display:block !important; padding:0  !important;}
