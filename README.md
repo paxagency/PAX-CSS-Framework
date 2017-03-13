@@ -1,5 +1,5 @@
 # PAX-CSS-Framework
-CSS Micro Framework • Lightweight Grid and HTML Element System
+CSS Micro Framework • Minimal Grid and HTML Element System
 
 *Requires Normalize Script: https://cdnjs.com/libraries/normalize*
 
