@@ -49,6 +49,7 @@ ul.tabs li {
 }
 ul.tabs li:hover {background:rgba(0,0,0,.05);}
 ul.tabs li.active {background:#fff;}
+ul.tabs a {width:100%; height:100%;display: block; text-decoration: none; color:#333;}
 section.cleartop {
   margin-top:0 !important;
   -webkit-border-top-left-radius: 0;
@@ -70,7 +71,7 @@ section.cleartop {
   overflow:scroll;
 	z-index: 1000;
 }
-a.overlay-wrap {width:100%; height:100%; display:block;}
+a.overlay-wrap {width:100%; height:100%; display:block;position:fixed;}
 .overlay:target {display: block;}
 .overlay section {
   position: absolute;
@@ -81,6 +82,7 @@ a.overlay-wrap {width:100%; height:100%; display:block;}
   top: 30px;
   left: 0;
   right: 0;
+  margin-bottom:30px;
 }
 .overlay-close {
   position: absolute;
@@ -109,16 +111,17 @@ a.overlay-wrap {width:100%; height:100%; display:block;}
     width: 100%;
     height: 100%;
 }
-
 /*////UL FORM////*/
 ul.form {
   list-style-type:none;
   margin:0;
   padding:0;
 }
-ul.form i {position:absolute; font-size:14px; padding-left:10px;color:#777;line-height:1.7em; font-family: arial;font-style:normal;}
-ul.form li {border-bottom:solid 2px #eee;}
-ul.form li:first-child {border-top:solid 2px #eee;}
-ul.form td {border-right:solid 2px #eee;}
+ul.form i {position:absolute; left:10px; top:2px; font-size:14px;color:#777;line-height:1.7em; font-family: arial;font-style:normal;}
+ul.form > li {border-bottom:solid 2px #d5dade;position: relative;}
+ul.form > li:first-child {border-top:solid 2px #d5dade;}
+ul.form td {border-right:solid 2px #d5dade;position: relative;}
 ul.form td:last-child {border-right:none;}
-ul.form input {border:none; padding:25px 10px 0 10px; font-size:21px; }
+ul.form input {border:none; padding:25px 10px 5px 10px; font-size:21px;}
+ul.form input.error {background: #ffe3e3 !important;color: #c14545;}
+ul.form textarea {margin-top:25px; margin-bottom:-9px; border:none; line-height:1.5em; font-size:14px;padding:5px 10px; min-height:100px;}
