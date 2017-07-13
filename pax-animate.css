@@ -1183,44 +1183,53 @@
 }
 .delay-10 {
     -webkit-animation-delay: 0.10s;
-    animation-delay: 0.10s
+    animation-delay: 0.10s;
+    opacity:0;
 }
 .delay-25 {
     -webkit-animation-delay: 0.25s;
-    animation-delay: 0.25s
+    animation-delay: 0.25s;
+    opacity:0;
 }
 .delay-50 {
     -webkit-animation-delay: 0.5s;
-    animation-delay: 0.5s
+    animation-delay: 0.5s;
+    opacity:0;
 }
 
 .delay-75 {
     -webkit-animation-delay: 0.75s;
-    animation-delay: 0.75s
+    animation-delay: 0.75s;
+    opacity:0;
 }
 
 .delay-100 {
     -webkit-animation-delay: 1s;
-    animation-delay: 1s
+    animation-delay: 1s;
+    opacity:0;
 }
 
 .delay-125 {
     -webkit-animation-delay: 1.25s;
-    animation-delay: 1.25s
+    animation-delay: 1.25s;
+    opacity:0;
 }
 
 .delay-150 {
     -webkit-animation-delay: 1.5s;
-    animation-delay: 1.5s
+    animation-delay: 1.5s;
+    opacity:0;
 }
 
 .delay-175 {
     -webkit-animation-delay: 1.75s;
-    animation-delay: 1.75s
+    animation-delay: 1.75s;
+    opacity:0;
 }
 
 .delay-200 {
     -webkit-animation-delay: 2s;
-    animation-delay: 2s
+    animation-delay: 2s;
+    opacity:0;
 }
 
