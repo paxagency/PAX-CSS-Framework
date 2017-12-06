@@ -1,3 +1,20 @@
+/***************************************
+****************************************
+8888888b.     d8888Y88b   d88P
+888   Y88b   d88888 Y88b d88P
+888    888  d88P888  Y88o88P
+888   d88P d88P 888   Y888P
+8888888P" d88P  888   d888b
+888      d88P   888  d88888b
+888     d8888888888 d88P Y88b
+888    d88P     888d88P   Y88b
+
+CSS Animate V 1.0
+Copyright 2017 PAXagency
+Created by Albert Kiteck
+www.paxagency.com
+****************************************
+****************************************/
 /*EFFECTS*/
 .pax-fade,.pax-fade-in { -webkit-animation:fadeIn;-moz-animation:fadeIn;animation:fadeIn;}
 .pax-fade-out { -webkit-animation:fadeOut;-moz-animation:fadeOut;animation:fadeOut;}
