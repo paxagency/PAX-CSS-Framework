@@ -16,26 +16,26 @@ www.paxagency.com
 ****************************************
 ****************************************/
 /*EFFECTS*/
-.pax-fade,.pax-fade-in { -webkit-animation:fadeIn;-moz-animation:fadeIn;animation:fadeIn;}
-.pax-fade-out { -webkit-animation:fadeOut;-moz-animation:fadeOut;animation:fadeOut;}
-.pax-slide-top {-webkit-animation:slideTop;-moz-animation:slideTop;animation:slideTop;}
-.pax-slide-left {-webkit-animation:slideLeft;-moz-animation:slideLeft;animation:slideLeft;}
-.pax-slide-right {-webkit-animation:slideRight;-moz-animation:slideRight;animation:slideRight;}
-.pax-slide-bottom {-webkit-animation:slideBottom;-moz-animation:slideBottom;animation:slideBottom;}
-.pax-slide-top-out {-webkit-animation:slideTopOut; -moz-animation:slideTopOut;animation:slideTopOut;}
-.pax-slide-left-out {-webkit-animation:slideLeftOut;-moz-animation:slideLeftOut;animation:slideLeftOut;}
-.pax-slide-right-out {-webkit-animation:slideRightOut;-moz-animation:slideRightOut;animation:slideRightOut;}
-.pax-slide-bottom-out {-webkit-animation:slideBottomOut;-moz-animation:slideBottomOut;animation:slideBottomOut;}
-.pax-scale { -webkit-animation:scale;-moz-animation:scale;animation:scale;}
-.pax-scale-out { -webkit-animation:scaleOut;-moz-animation:scaleOut;animation:scaleOut;}
-.pax-scale-big { -webkit-animation:scaleBig;-moz-animation:scaleBig;animation:scaleBig;}
-.pax-scale-big-out { -webkit-animation:scaleBigOut;-moz-animation:scaleBigOut;animation:scaleBigOut;}
-.pax-bounce {-webkit-animation: bounce .5s forwards;animation: bounce .5s forwards}
-.pax-pulse {-webkit-animation: pulse 1s ease-out;-webkit-animation-iteration-count: infinite;opacity: 0.5;}
-.pax-shake {-webkit-animation: shake .5s forwards;animation: shake .5s forwards}
+.pax.fade,.pax.fade-in { -webkit-animation:fadeIn;-moz-animation:fadeIn;animation:fadeIn;}
+.pax.fade-out { -webkit-animation:fadeOut;-moz-animation:fadeOut;animation:fadeOut;}
+.pax.slide-top {-webkit-animation:slideTop;-moz-animation:slideTop;animation:slideTop;}
+.pax.slide-left {-webkit-animation:slideLeft;-moz-animation:slideLeft;animation:slideLeft;}
+.pax.slide-right {-webkit-animation:slideRight;-moz-animation:slideRight;animation:slideRight;}
+.pax.slide-bottom {-webkit-animation:slideBottom;-moz-animation:slideBottom;animation:slideBottom;}
+.pax.slide-top-out {-webkit-animation:slideTopOut; -moz-animation:slideTopOut;animation:slideTopOut;}
+.pax.slide-left-out {-webkit-animation:slideLeftOut;-moz-animation:slideLeftOut;animation:slideLeftOut;}
+.pax.slide-right-out {-webkit-animation:slideRightOut;-moz-animation:slideRightOut;animation:slideRightOut;}
+.pax.slide-bottom-out {-webkit-animation:slideBottomOut;-moz-animation:slideBottomOut;animation:slideBottomOut;}
+.pax.scale { -webkit-animation:scale;-moz-animation:scale;animation:scale;}
+.pax.scale-out { -webkit-animation:scaleOut;-moz-animation:scaleOut;animation:scaleOut;}
+.pax.scale-big { -webkit-animation:scaleBig;-moz-animation:scaleBig;animation:scaleBig;}
+.pax.scale-big-out { -webkit-animation:scaleBigOut;-moz-animation:scaleBigOut;animation:scaleBigOut;}
+.pax.bounce {-webkit-animation: bounce .5s forwards;animation: bounce .5s forwards}
+.pax.pulse {-webkit-animation: pulse 1s ease-out;-webkit-animation-iteration-count: infinite;opacity: 0.5;}
+.pax.shake {-webkit-animation: shake .5s forwards;animation: shake .5s forwards}
 
 /*DEFAULTS*/
-.pax-slide-top,.pax-scale-big,.pax-scale-big-out,.pax-scale-out,.pax-scale,.pax-fade-in,.pax-slide,.pax-slide-left,.pax-slide-right,.pax-slide-bottom,.pax-fade,.pax-fade-out,.pax-slide-top-out,.pax-slide-bottom-out,.pax-slide-left-out,.pax-slide-right-out {
+.pax.slide-top,.pax.scale-big,.pax.scale-big-out,.pax.scale-out,.pax.scale,.pax.fade-in,.pax.slide,.pax.slide-left,.pax.slide-right,.pax.slide-bottom,.pax.fade,.pax.fade-out,.pax.slide-top-out,.pax.slide-bottom-out,.pax.slide-left-out,.pax.slide-right-out {
   position:relative;
   opacity:0;
   -webkit-animation-duration:1s;
@@ -45,35 +45,35 @@ www.paxagency.com
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 }
-.pax-scale-big-out,.pax-scale-out,.pax-fade-out,.pax-slide-top-out,.pax-slide-left-out,.pax-slide-right-out,.pax-slide-bottom-out{opacity:1;}
-.pax-fade-in,.pax-fade-out,.pax-fade,.pax-scale-top-out,.pax-scale-right-out,.pax-scale-left-out,.pax-scale-bottom-out {animation-timing-function:ease-in;}
+.pax.scale-big-out,.pax.scale-out,.pax.fade-out,.pax.slide-top-out,.pax.slide-left-out,.pax.slide-right-out,.pax.slide-bottom-out{opacity:1;}
+.pax.fade-in,.pax.fade-out,.pax.fade,.pax.scale-top-out,.pax.scale-right-out,.pax.scale-left-out,.pax.scale-bottom-out {animation-timing-function:ease-in;}
 
 /*TIMING*/
-.pax-length-10 {-webkit-animation-duration:.25s;-moz-animation-duration:.25s;animation-duration:.25s;}
-.pax-length-25 {-webkit-animation-duration:.25s;-moz-animation-duration:.25s;animation-duration:.25s;}
-.pax-length-50 {-webkit-animation-duration:.5s;-moz-animation-duration:.5s;animation-duration:.5s;}
-.pax-length-2 {-webkit-animation-duration:2s;-moz-animation-duration:2s;animation-duration:2s;}
-.pax-length-250 {-webkit-animation-duration:2.5s;-moz-animation-duration:2.5s;animation-duration:2.5s;}
-.pax-length-3 {-webkit-animation-duration:3s;-moz-animation-duration:3s;animation-duration:3s;}
-.pax-length-4 {-webkit-animation-duration:4s;-moz-animation-duration:4s;animation-duration:4s;}
-.pax-length-5 {-webkit-animation-duration:5s;-moz-animation-duration:5s;animation-duration:5s;}
+.pax.length-10 {-webkit-animation-duration:.25s;-moz-animation-duration:.25s;animation-duration:.25s;}
+.pax.length-25 {-webkit-animation-duration:.25s;-moz-animation-duration:.25s;animation-duration:.25s;}
+.pax.length-50 {-webkit-animation-duration:.5s;-moz-animation-duration:.5s;animation-duration:.5s;}
+.pax.length-2 {-webkit-animation-duration:2s;-moz-animation-duration:2s;animation-duration:2s;}
+.pax.length-250 {-webkit-animation-duration:2.5s;-moz-animation-duration:2.5s;animation-duration:2.5s;}
+.pax.length-3 {-webkit-animation-duration:3s;-moz-animation-duration:3s;animation-duration:3s;}
+.pax.length-4 {-webkit-animation-duration:4s;-moz-animation-duration:4s;animation-duration:4s;}
+.pax.length-5 {-webkit-animation-duration:5s;-moz-animation-duration:5s;animation-duration:5s;}
 
 /*DELAY*/
-.pax-delay-10 {-webkit-animation-delay:.1s;-moz-animation-delay:.1s;animation-delay:.1s;}
-.pax-delay-25 {-webkit-animation-delay:.25s;-moz-animation-delay:.25s;animation-delay:.25s;}
-.pax-delay-50 {-webkit-animation-delay:.50s;-moz-animation-delay:.50s;animation-delay:.50s;}
-.pax-delay-75 {-webkit-animation-delay:.75s;-moz-animation-delay:.75s;animation-delay:.75s;}
-.pax-delay-1 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
-.pax-delay-2 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
-.pax-delay-1 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
+.pax.delay-10 {-webkit-animation-delay:.1s;-moz-animation-delay:.1s;animation-delay:.1s;}
+.pax.delay-25 {-webkit-animation-delay:.25s;-moz-animation-delay:.25s;animation-delay:.25s;}
+.pax.delay-50 {-webkit-animation-delay:.50s;-moz-animation-delay:.50s;animation-delay:.50s;}
+.pax.delay-75 {-webkit-animation-delay:.75s;-moz-animation-delay:.75s;animation-delay:.75s;}
+.pax.delay-1 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
+.pax.delay-2 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
+.pax.delay-1 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
 
 /*EASING*/
-.pax-ease-linear {animation-timing-function:linear;}
-.pax-ease {animation-timing-function:ease;}
-.pax-ease-in {animation-timing-function:ease-in;}
-.pax-ease-in-out {animation-timing-function:ease-in-out;}
-.pax-ease-cubic {animation-timing-function:cubic-bezier(0.75, 0, 0.25, 1);}
-.pax-ease-elastic {animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);}
+.pax.ease-linear {animation-timing-function:linear;}
+.pax.ease {animation-timing-function:ease;}
+.pax.ease-in {animation-timing-function:ease-in;}
+.pax.ease-in-out {animation-timing-function:ease-in-out;}
+.pax.ease-cubic {animation-timing-function:cubic-bezier(0.75, 0, 0.25, 1);}
+.pax.ease-elastic {animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);}
 
 /*ANIMATIONS*/
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
