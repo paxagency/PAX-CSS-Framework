@@ -41,7 +41,7 @@ www.paxagency.com
   -webkit-animation-duration:1s;
   -moz-animation-duration:1s;
   animation-duration:1s;
-  -webkit-animation-fill-mode:forwards;  
+  -webkit-animation-fill-mode:forwards;
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 }
@@ -52,28 +52,41 @@ www.paxagency.com
 .pax.length-10 {-webkit-animation-duration:.25s;-moz-animation-duration:.25s;animation-duration:.25s;}
 .pax.length-25 {-webkit-animation-duration:.25s;-moz-animation-duration:.25s;animation-duration:.25s;}
 .pax.length-50 {-webkit-animation-duration:.5s;-moz-animation-duration:.5s;animation-duration:.5s;}
-.pax.length-2 {-webkit-animation-duration:2s;-moz-animation-duration:2s;animation-duration:2s;}
+.pax.length-200 {-webkit-animation-duration:2s;-moz-animation-duration:2s;animation-duration:2s;}
 .pax.length-250 {-webkit-animation-duration:2.5s;-moz-animation-duration:2.5s;animation-duration:2.5s;}
-.pax.length-3 {-webkit-animation-duration:3s;-moz-animation-duration:3s;animation-duration:3s;}
-.pax.length-4 {-webkit-animation-duration:4s;-moz-animation-duration:4s;animation-duration:4s;}
-.pax.length-5 {-webkit-animation-duration:5s;-moz-animation-duration:5s;animation-duration:5s;}
+.pax.length-300 {-webkit-animation-duration:3s;-moz-animation-duration:3s;animation-duration:3s;}
+.pax.length-350 {-webkit-animation-duration:3.5s;-moz-animation-duration:3.5s;animation-duration:3.5s;}
+.pax.length-400 {-webkit-animation-duration:4s;-moz-animation-duration:4s;animation-duration:4s;}
+.pax.length-500 {-webkit-animation-duration:5s;-moz-animation-duration:5s;animation-duration:5s;}
 
 /*DELAY*/
 .pax.delay-10 {-webkit-animation-delay:.1s;-moz-animation-delay:.1s;animation-delay:.1s;}
 .pax.delay-25 {-webkit-animation-delay:.25s;-moz-animation-delay:.25s;animation-delay:.25s;}
 .pax.delay-50 {-webkit-animation-delay:.50s;-moz-animation-delay:.50s;animation-delay:.50s;}
 .pax.delay-75 {-webkit-animation-delay:.75s;-moz-animation-delay:.75s;animation-delay:.75s;}
-.pax.delay-1 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
-.pax.delay-2 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
-.pax.delay-1 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
+.pax.delay-100 {-webkit-animation-delay:1s;-moz-animation-delay:1s;animation-delay:1s;}
+.pax.delay-150 {-webkit-animation-delay:1.5s;-moz-animation-delay:1.5s;animation-delay:1.5s;}
+.pax.delay-200 {-webkit-animation-delay:2s;-moz-animation-delay:2s;animation-delay:2s;}
+.pax.delay-250 {-webkit-animation-delay:2.5s;-moz-animation-delay:2.5s;animation-delay:2.5s;}
+.pax.delay-300 {-webkit-animation-delay:3s;-moz-animation-delay:3s;animation-delay:3s;}
 
 /*EASING*/
 .pax.ease-linear {animation-timing-function:linear;}
-.pax.ease {animation-timing-function:ease;}
+.pax.ease,.pax.ease-out {animation-timing-function:ease;}
 .pax.ease-in {animation-timing-function:ease-in;}
 .pax.ease-in-out {animation-timing-function:ease-in-out;}
-.pax.ease-cubic {animation-timing-function:cubic-bezier(0.75, 0, 0.25, 1);}
-.pax.ease-elastic {animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);}
+.pax.ease-quad,.pax.ease-quad-out {animation-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);}
+.pax.ease-quad-in {animation-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);}
+.pax.ease-quad-in-out {animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);}
+.pax.ease-quart,.pax.ease-quart-out {animation-timing-function:cubic-bezier(0.165, 0.84, 0.44, 1);}
+.pax.ease-quart-in {animation-timing-function:cubic-bezier(0.895, 0.03, 0.685, 0.22);}
+.pax.ease-quart-in-out {animation-timing-function:cubic-bezier(0.77, 0, 0.175, 1);}
+.pax.ease-expo,.pax.ease-expo-out {animation-timing-function:cubic-bezier(0.19, 1, 0.22, 1);}
+.pax.ease-expo-in {animation-timing-function:cubic-bezier(0.95, 0.05, 0.795, 0.035);}
+.pax.ease-expo-in-out {animation-timing-function:cubic-bezier(1, 0, 0, 1);}
+.pax.ease-back,.pax.ease-back-out {animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);}
+.pax.ease-back-in {animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);}
+.pax.ease-back-in-out {animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);}
 
 /*ANIMATIONS*/
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -179,4 +192,3 @@ www.paxagency.com
 	87.5% {-webkit-transform: translateX(2px);transform: translateX(2px);}
     100% {-webkit-transform: translateX(0);transform: translateX(0);}
 }
-
