@@ -45,6 +45,7 @@ www.paxagency.com
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 }
+.animate.fade-out,.animate.slide-top-out,.animate.slide-left-out,.animate.slide-right-out,.animate.slide-bottom-out,.animate.scale-out,.animate.scale-big-out {opacity:1;}
 .animate.scale-big-out,.animate.scale-out,.animate.fade-out,.animate.slide-top-out,.animate.slide-left-out,.animate.slide-right-out,.animate.slide-bottom-out{opacity:1;}
 .animate.fade-in,.animate.fade-out,.animate.fade,.animate.scale-top-out,.animate.scale-right-out,.animate.scale-left-out,.animate.scale-bottom-out {animation-timing-function:ease-in;}
 
