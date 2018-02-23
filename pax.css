@@ -108,9 +108,9 @@ input[type='text'],input[type='password'],input[type='date'],input[type='datetim
 .hide {display:none;}
 .absolute {position:absolute;}
 .relative {position:relative;}
-.fixed {position:fixed;}
-.fixed.left,.absolute.left,.relative.left {float:none; left:10px;}
-.fixed.right,.absolute.right,.relative.right {float:none; right:10px;text-align:left;}
+.fixed {position:fixed;} .fixed.stay {position:fixed !important;}
+.fixed.left,.absolute.left,.relative.left {float:none;left:10px;}
+.fixed.right,.absolute.right,.relative.right {float:none;right:10px;text-align:left;}
 .top {top:0;}
 .bottom{bottom:0;}
 .block {width:100%;padding-left:0;padding-right:0;display:inline-block;}
@@ -165,34 +165,26 @@ input[type='text'],input[type='password'],input[type='date'],input[type='datetim
 input {border-width:1px !important;}
 
 @media all and (max-width: 735px) {
-	h1,h2,h3,h4,p {letter-spacing:0 !important;}
-	h1 {font-size:2em !important;}
-	h2 {font-size:1.5em !important;}
-	h3 {font-size:1.17em !important;}
-	h4 {font-size:1em !important;}
-	h5 {font-size:.9em !important;}
-	p,ul,blockquote,button,table,pre {font-size:1em  !important;}
-	.spread {letter-spacing: 5px !important;}
-	section {padding:20px !important;overflow:hidden;}
-	div.row > div,div.grid > div > div {width:100% !important;display:block !important; padding:0 !important}
-  	div.row.pad > div,div.grid.pad > div,div.row.allpad > div,div.grid.allpad > div {padding:10px !important;}
-  	div.row.stay > div,div.grid.stay > div > div {width:auto !important;display:table-cell !important; }
-	table td {width:auto !important;}
-	table.pad td{ padding:10px  !important;}
-	table.break > tbody > tr > td,table.break > tbody > tr > th,table.break{display:block !important; padding:0  !important;}
-	table.list {table-layout: fixed !important;}
-	table.list > tbody > tr > td {text-overflow: ellipsis;}
-	.button {width:100% !important;padding:15px 0 !important; display: inline-block !important;}
-	.button.small {padding:10px 0 !important;}
-	.left,.right {float:none !important;}
-	.fixed {position:inline-block !important;}
-	img {width:100% !important; max-width:100% !important; height:auto !important;max-height:auto !important;}
-	.mhide,.hide {display:none !important;}
-	.round {-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px !important;}
-	.round.p2 {-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px !important;}
-	.round.p10 {border-radius:10px !important;}
-	.round.p20 {border-radius:20px !important;}
-	.round.p30 {border-radius:30px !important;}
-	.round.p40 {border-radius:40px !important;}
-	.round.p50 {border-radius:50px !important;}
+	h1,h2,h3,h4,p {letter-spacing:0 ;}
+	h1,h1.lg {font-size:2em;}
+	h2,h2.lg {font-size:1.5em;}
+	h3,h3.lg {font-size:1.17em;}
+	h4,h4.lg {font-size:1em;}
+	h5,h5.lg {font-size:.9em;}
+	p,ul,blockquote,button,table,pre {font-size:1em;}
+	.spread {letter-spacing: 5px;}
+	.slat {padding:20px;overflow:hidden;}
+	div.row>div,div.grid>div>div {width:100% !important;display:block; padding:0}
+  	div.row.pad>div,div.grid.pad>div,div.row.allpad>div,div.grid.allpad>div {padding:10px;}
+  	div.row.stay>div,div.grid.stay>div>div {width:auto !important; display:table-cell; }
+	table.list {table-layout:fixed;}
+	table.pad>tbody>tr>td,table.pad>thead>tr>th{ padding:10px;}
+	table.break>thead>tr>th,table.break>thead>tr,table.break>thead,table.break>tbody>tr>td,table.break>tbody>tr>th,table.break{display:block;padding:0;width:100%;}
+	table.break>tbody>tr>td,table.break>thead>tr>th {padding:5px 10px; border-top:solid thin #ddd;bottom:solid thin #ddd;}
+	.button {width:100%;padding:15px 0;display:inline-block;}
+	.button.small {padding:10px 0;}
+	.fleft,.fright {float:none;}
+	.fixed {position:static; }
+	img {width:100%;max-width:100%;height:auto;max-height:auto;}
+	.mhide,.hide {display:none;}
 }
