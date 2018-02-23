@@ -35,7 +35,7 @@ h1.lg{font-size:5em;}h2.lg{font-size:3.5em;}h3.lg{font-size:3em;}h4.lg{font-size
 img {max-width:100%;}
 pre {padding:30px; background:#eee;}
 .slat {max-width:960px; margin:0 auto; display:block; padding:60px 40px;}
-*.pad {padding:20px;}
+.pad{padding:20px;}.margin{margin:20px;}.nopad {padding:0;}.nomargin{margin:0;}
 div.row,div.grid {display:table;width:100%; margin:20px 0;table-layout:fixed;border-collapse:collapse;}
 div.row.middle > div,div.grid.middle > div {vertical-align:middle;}
 div.row.pad > div,div.grid.pad > div,div.row.allpad > div,div.grid.allpad > div {padding:20px;}
@@ -161,8 +161,7 @@ input[type='text'],input[type='password'],input[type='date'],input[type='datetim
 .grad-red {background: linear-gradient(45deg,#ff0800,#ff7d69);} .grad-red.border{border:solid 2px #ff0800;}
 .grad-black {background: linear-gradient(45deg,#000,#43006b);} .grad-black.border{border:solid 2px #000;}
 .grad-black.text,.grad-lightblue.text,.grad-blue.text,.grad-purple.text,.grad-pink.text,.grad-orange.text,.grad-aqua.text,.grad-yellow.text,.grad-green.text,.grad-red.text {-webkit-background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-
-input {border-width:1px !important;}
+input {border-width:1px;}
 
 @media all and (max-width: 735px) {
 	h1,h2,h3,h4,p {letter-spacing:0 ;}
