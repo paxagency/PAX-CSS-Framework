@@ -46,6 +46,7 @@ input[type='text'],input[type='password'],input[type='date'],input[type='datetim
 	padding:14px 17px 14px 17px;
 }
 p.lg,ul.lg,blockquote.lg,footer.lg,table.lg{font-size:25px;}
+p.sm,ul.sm,blockquote.sm,footer.sm,table.sm{font-size:13px;}
 h1.lg{font-size:5em;}h2.lg{font-size:3.5em;}h3.lg{font-size:3em;}h4.lg{font-size:2.5em;}h5.lg{font-size:2em;}
 /*GRID SYSTEM*/
 .slat {max-width:960px;margin:0 auto;display:block;padding:60px 40px;}
@@ -98,17 +99,19 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 .button.small {font-size:12px; font-weight:bold; padding:4px 30px 4px 30px;}
 
 .cap{text-transform:uppercase;}
-.spread{letter-spacing:10px;}
+.spread{letter-spacing:.4em;}
 .right{text-align:right;}
 .center{text-align:center;}
+.italic{font-style:italic;}
+.strike{text-decoration:line-through;}
 .f1{font-weight:100;}.f2{font-weight:200;}.f3{font-weight:300;}.f4{font-weight:400;}.f5{font-weight:500;}
 .f6{font-weight:600;}.f7{font-weight:700;}.f8{font-weight:800;}.f9{font-weight:900;}
 .border{border:solid 1px #ccc;}
 .block {width:100%;padding-left:0;padding-right:0;display:inline-block;}
 .pad{padding:20px;}
 .op8{opacity:.8;filter:alpha(opacity=80);-moz-opacity:0.8;}.op7{opacity:.7;filter:alpha(opacity=70);-moz-opacity:0.5;}.op5{opacity:.5;filter:alpha(opacity=50);-moz-opacity:0.5;}
-.floatL{float:left;}
-.floatR{float:right;}
+.float{float:left;}.float.stay{float:left !important;}
+.floatRight{float:right;}.floatRight.stay{float:right !important;}
 .hide{display:none;}
 .relative{position:relative;}
 .absolute{position:absolute;}.absolute.stay{position:absolute !important;}
@@ -166,14 +169,13 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 input {border-width:1px;}
 
 @media all and (max-width: 735px) {
-	h1,h2,h3,h4,p {letter-spacing:0 ;}
+	h1,h2,h3,h4,p {letter-spacing:0;}
 	h1,h1.lg {font-size:2em;}
 	h2,h2.lg {font-size:1.5em;}
 	h3,h3.lg {font-size:1.17em;}
 	h4,h4.lg {font-size:1em;}
 	h5,h5.lg {font-size:.9em;}
 	p,ul,blockquote,button,table,pre {font-size:1em;}
-	.spread {letter-spacing: 5px;}
 	.slat {padding:20px;overflow:hidden;}
 	div.row>div,div.grid>div>div {width:100% !important;display:block; padding:0}
   	div.row.pad>div,div.grid.pad>div,div.row.allpad>div,div.grid.allpad>div {padding:10px;}
@@ -184,8 +186,8 @@ input {border-width:1px;}
 	table.break>tbody>tr>td,table.break>thead>tr>th {padding:5px 10px; border-top:solid thin #ddd;bottom:solid thin #ddd;}
 	.button {width:100%;padding:15px 0;display:inline-block;}
 	.button.small {padding:10px 0;}
-	.fleft,.fright {float:none;}
-	.fixed {position:static; }
+	.float,.floatRight {float:none;}
+	.fixed {position:static;}
 	img {width:100%;max-width:100%;height:auto;max-height:auto;}
 	.mhide,.hide {display:none;}
 }
