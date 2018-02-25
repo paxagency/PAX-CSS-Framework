@@ -165,7 +165,6 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 .grad-red{background: linear-gradient(45deg,#ff0800,#ff7d69);} .grad-red.border{border:solid 2px #ff0800;}
 .grad-black{background: linear-gradient(45deg,#000,#43006b);} .grad-black.border{border:solid 2px #000;}
 .grad-black.text,.grad-lightblue.text,.grad-blue.text,.grad-purple.text,.grad-pink.text,.grad-orange.text,.grad-aqua.text,.grad-yellow.text,.grad-green.text,.grad-red.text{-webkit-background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
-
 input{border-width:1px;}
 
 @media all and (max-width: 735px){
@@ -178,8 +177,8 @@ input{border-width:1px;}
 	p,ul,ol,blockquote,button,table,pre{font-size:1em;}
 	.slat{padding:20px;overflow:hidden;}
 	div.row>div,div.grid>div>div{width:100% !important;display:block; padding:0}
-  	div.row.pad>div,div.grid.pad>div,div.row.allpad>div,div.grid.allpad>div{padding:10px;}
-  	div.row.stay>div,div.grid.stay>div>div{width:auto !important; display:table-cell; }
+  	div.row.pad>div,div.grid.pad>div,div.row.allpad>div,div.grid.allpad>div{padding:0px;}
+  	div.row.stay>div,div.grid.stay>div>div{width:auto !important; display:table-cell; padding:5px;}
 	table.list{table-layout:fixed;}
 	table.pad>tbody>tr>td,table.pad>thead>tr>th{ padding:10px;}
 	table.break>thead>tr>th,table.break>thead>tr,table.break>thead,table.break>tbody>tr>td,table.break>tbody>tr>th,table.break{display:block;padding:0;width:100%;}
