@@ -115,7 +115,7 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 .hide{display:none;}
 .relative{position:relative;}
 .absolute{position:absolute;}.absolute.stay{position:absolute !important;}
-.fixed{position:fixed;} .fixed.stay{position:fixed !important;}
+.fixed{position:fixed;z-index:1;} .fixed.stay{position:fixed !important;}
 .absolute.left,.fixed.left,.relative.left{float:none;left:20px;}
 .absolute.right,.fixed.right,.relative.right{float:none;right:20px;text-align:left;}
 .absolute.top,.fixed.top,.relative.top{top:0;}
@@ -154,7 +154,7 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 .black{background:#000;} .black.text{color:#000;background:none} .black.border{border:solid 2px #000;}
 .grey{background:#aaa;} .grey.text{color:#aaa;background:none} .grey.border{border:solid 2px #aaa;}
 .white{background:#fff;} .white.text{color:#fff;background:none} .white.border{border:solid 2px #fff;}
-.grad-blue{background:linear-gradient(45deg,#002aff,#00c8ff);}.grad-blue.border{border:solid 2px #0061ff;}
+.grad-blue{background:linear-gradient(45deg,#002ba5,#00c8ff);}.grad-blue.border{border:solid 2px #0061ff;}
 .grad-lightblue{background:linear-gradient(45deg,#00c8ff,#f2fcfe);}.grad-lightblue.border{border:solid 2px #00c8ff;}
 .grad-purple{background: linear-gradient(45deg,#1d1fb0,#c100ff);} .grad-purple.border{border:solid 2px #1d1fb0;}
 .grad-pink{background: linear-gradient(45deg,magenta,red);} .grad-pink.border{border:solid 2px magenta;}
