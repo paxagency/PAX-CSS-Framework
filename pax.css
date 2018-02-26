@@ -49,7 +49,7 @@ p.lg,ul.lg,ol.lg,blockquote.lg,footer.lg,table.lg{font-size:25px;}
 p.sm,ul.sm,ol.lg,blockquote.sm,footer.sm,table.sm{font-size:13px;}
 h1.lg{font-size:5em;}h2.lg{font-size:3.5em;}h3.lg{font-size:3em;}h4.lg{font-size:2.5em;}h5.lg{font-size:2em;}
 
-.slat{max-width:960px;margin:0 auto;display:block;padding:60px 40px;}
+.wrap{max-width:960px;margin:0 auto;display:block;padding:60px 40px;}
 div.row,div.grid{display:table;width:100%; margin:20px 0;table-layout:fixed;border-collapse:collapse;}
 div.row.pad > div,div.grid.pad > div,div.row.allpad > div,div.grid.allpad > div{padding:20px;}
 div.row.pad > div:first-child,div.grid.pad > div:first-child{padding-left:0;}
@@ -168,14 +168,14 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 input{border-width:1px;}
 
 @media all and (max-width: 735px){
-	h1,h2,h3,h4,p{letter-spacing:0;}
-	h1,h1.lg{font-size:2em;}
-	h2,h2.lg{font-size:1.5em;}
-	h3,h3.lg{font-size:1.17em;}
-	h4,h4.lg{font-size:1em;}
-	h5,h5.lg{font-size:.9em;}
-	p,ul,ol,blockquote,button,table,pre{font-size:1em;}
-	.slat{padding:20px;overflow:hidden;}
+	h1,h2,h3,h4,p{letter-spacing:0 !important;}
+	h1,h1.lg{font-size:2em !important;}
+	h2,h2.lg{font-size:1.5em !important;}
+	h3,h3.lg{font-size:1.17em !important;}
+	h4,h4.lg{font-size:1em !important;}
+	h5,h5.lg{font-size:.9em !important;}
+	p,ul,ol,blockquote,button,table,pre{font-size:1em !important;}
+	.wrap{padding:20px;overflow:hidden;}
 	div.row>div,div.grid>div>div{width:100% !important;display:block; padding:0}
   	div.row.pad>div,div.grid.pad>div,div.row.allpad>div,div.grid.allpad>div{padding:0px;}
   	div.row.stay>div,div.grid.stay>div>div{width:auto !important; display:table-cell; padding:5px;}
