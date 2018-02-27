@@ -144,8 +144,8 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 .grad-lightblue,.grad-black,.grad-yellow,.grad-green,.grad-aqua,.grad-red,.grad-pink,.grad-orange,.grad-purple,.grad-blue,.black,.gray,.blue,.lightblue,.aqua,.green,.yellow,.orange,.red,.pink,.purple{color:#fff;border:none;}
 .blue{background:#0061ff;} .blue.text{color:#0061ff;background:none} .blue.border{border:solid 2px #0061ff;}
 .lightblue{background:#00c8ff;} .lightblue.text{color:#00c8ff;background:none} .lightblue.border{border:solid 2px #00c8ff;}
-.aqua{background:#00bdbb;} .aqua.text{color:#00bdbb;background:none} .aqua.border{border:solid 2px #00c19f;}
-.green{background:#63af42 ;} .green.text{color:#63af42;background:none} .green.border{border:solid 2px #63af42;}
+.aqua{background:#00bab3;} .aqua.text{color:#00bab3;background:none} .aqua.border{border:solid 2px #00bab3;}
+.green{background:#30ab36 ;} .green.text{color:#30ab36;background:none} .green.border{border:solid 2px #30ab36;}
 .yellow{background:#fecd34;} .yellow.text{color:#fecd34;background:none} .yellow.border{border:solid 2px #fecd34;}
 .orange{background:#fd8227;} .orange.text{color:#fd8227;background:none} .orange.border{border:solid 2px #fd8227;}
 .red{background:#fc143f;} .red.text{color:#fc143f;background:none} .red.border{border:solid 2px #fc143f;}
@@ -161,7 +161,7 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 .grad-orange{background: linear-gradient(45deg,#f8ae2c,#ee2d29);} .grad-orange.border{border:solid 2px #f8ae2c;}
 .grad-aqua{background: linear-gradient(45deg,#a1eee1,#4534ed);} .grad-aqua.border{border:solid 2px #00bdbb;}
 .grad-yellow{background: linear-gradient(45deg,#FDFC47,#ed4f9e);} .grad-yellow.border{border:solid 2px #ffa200;}
-.grad-green{background: linear-gradient(45deg,#63af42,#ffe400);} .grad-green.border{border:solid 2px #63af42;}
+.grad-green{background: linear-gradient(45deg,#30ab36,#ffe400);} .grad-green.border{border:solid 2px #30ab36;}
 .grad-red{background: linear-gradient(45deg,#ff0800,#ff7d69);} .grad-red.border{border:solid 2px #ff0800;}
 .grad-black{background: linear-gradient(45deg,#000,#43006b);} .grad-black.border{border:solid 2px #000;}
 .grad-black.text,.grad-lightblue.text,.grad-blue.text,.grad-purple.text,.grad-pink.text,.grad-orange.text,.grad-aqua.text,.grad-yellow.text,.grad-green.text,.grad-red.text{-webkit-background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent;}
