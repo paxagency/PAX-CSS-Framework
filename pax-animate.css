@@ -30,14 +30,19 @@ www.paxagency.com
 .animate.scale-out { -webkit-animation:scaleOut;-moz-animation:scaleOut;animation:scaleOut;}
 .animate.scale-big { -webkit-animation:scaleBig;-moz-animation:scaleBig;animation:scaleBig;}
 .animate.scale-big-out { -webkit-animation:scaleBigOut;-moz-animation:scaleBigOut;animation:scaleBigOut;}
+.animate.scale-small { -webkit-animation:scaleSmall;-moz-animation:scaleSmall;animation:scaleSmall;}
+.animate.scale-small-out { -webkit-animation:scaleSmallOut;-moz-animation:scaleSmallOut;animation:scaleSmallOut;}
 .animate.grow { -webkit-animation:grow;-moz-animation:grow;animation:grow;}
 .animate.grow-out { -webkit-animation:growOut;-moz-animation:growOut;animation:growOut;}
+.animate.bulge { -webkit-animation:bulge;-moz-animation:bulge;animation:bulge;}
+.animate.bulge-out { -webkit-animation:bulgeOut;-moz-animation:bulgeOut;animation:bulge;}
+
 .animate.bounce {-webkit-animation: bounce .5s forwards;animation: bounce .5s forwards}
 .animate.pulse {-webkit-animation: pulse 1s ease-out;-webkit-animation-iteration-count: infinite;opacity: 0.5;}
 .animate.shake {-webkit-animation: shake .5s forwards;animation: shake .5s forwards}
 
 /*DEFAULTS*/
-.animate.slide-top,.animate.grow,.animate.grow-out,.animate.scale-big,.animate.scale-big-out,.animate.scale-out,.animate.scale,.animate.fade-in,.animate.slide,.animate.slide-left,.animate.slide-right,.animate.slide-bottom,.animate.fade,.animate.fade-out,.animate.slide-top-out,.animate.slide-bottom-out,.animate.slide-left-out,.animate.slide-right-out {
+.animate.scale-small,.animate.scale-small-out,.animate.bulge,.animate.bulge-out,.animate.slide-top,.animate.grow,.animate.grow-out,.animate.scale-big,.animate.scale-big-out,.animate.scale-out,.animate.scale,.animate.fade-in,.animate.slide,.animate.slide-left,.animate.slide-right,.animate.slide-bottom,.animate.fade,.animate.fade-out,.animate.slide-top-out,.animate.slide-bottom-out,.animate.slide-left-out,.animate.slide-right-out {
   position:relative;
   opacity:0;
   -webkit-animation-duration:1s;
@@ -47,7 +52,7 @@ www.paxagency.com
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 }
-.animate.grow-out,.animate.scale-big-out,.animate.scale-out,.animate.fade-out,.animate.slide-top-out,.animate.slide-left-out,.animate.slide-right-out,.animate.slide-bottom-out{opacity:1;}
+.animate.bulge-out,.animate.scale-small-out,.animate.grow-out,.animate.scale-big-out,.animate.scale-out,.animate.fade-out,.animate.slide-top-out,.animate.slide-left-out,.animate.slide-right-out,.animate.slide-bottom-out{opacity:1;}
 .animate.fade-in,.animate.fade-out,.animate.fade,.animate.scale-top-out,.animate.scale-right-out,.animate.scale-left-out,.animate.scale-bottom-out {animation-timing-function:ease-in;}
 
 /*TIMING*/
@@ -77,6 +82,7 @@ www.paxagency.com
 .animate.ease,.animate.ease-out {animation-timing-function:ease;}
 .animate.ease-in {animation-timing-function:ease-in;}
 .animate.ease-in-out {animation-timing-function:ease-in-out;}
+.animate.ease-bezier {animation-timing-function:cubic-bezier(0.75, 0, 0.25, 1);}
 .animate.ease-quad,.animate.ease-quad-out {animation-timing-function:cubic-bezier(0.25, 0.46, 0.45, 0.94);}
 .animate.ease-quad-in {animation-timing-function:cubic-bezier(0.55, 0.085, 0.68, 0.53);}
 .animate.ease-quad-in-out {animation-timing-function:cubic-bezier(0.455, 0.03, 0.515, 0.955);}
@@ -95,9 +101,9 @@ www.paxagency.com
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1;}}
 
-@-webkit-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
-@-moz-keyframes fadeOut { from { opacity:1; } to { opacity:0; } }
-@keyframes fadeOut { from { opacity:1; } to { opacity:0;}}
+@-webkit-keyframes fadeOut { from { opacity:1; z-index: 0;} to { opacity:0; z-index: -1;} }
+@-moz-keyframes fadeOut { from { opacity:1; z-index: 0;} to { opacity:0; z-index: -1;} }
+@keyframes fadeOut { from { opacity:1; z-index: 0;} to { opacity:0;z-index: -1;}}
 
 @keyframes slideTop {from{-webkit-transform: translateY(-100%);transform: translateY(-100%);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
 @-webkit-keyframes slideTop {from{-webkit-transform: translateY(-100%);transform: translateY(-100%);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
@@ -147,6 +153,14 @@ www.paxagency.com
 @-webkit-keyframes scaleBigOut {from{-webkit-transform:scale(1);transform: scale(1);opacity:1;} to{-webkit-transform:scale(3);transform: scale(3);opacity:0;}}
 @-moz-keyframes scaleBigOut {from{-webkit-transform:scale(1);transform: scale(1);opacity:1;} to{-webkit-transform:scale(3);transform: scale(3);opacity:0;}}
 
+@keyframes scaleSmall {from{-webkit-transform:scale(1.05);transform: scale(1.05);opacity:0;} to{-webkit-transform:scale(1);transform: scale(1);opacity:1;}}
+@-webkit-keyframes scaleBog {from{-webkit-transform:scale(1.05);transform: scale(1.05);opacity:0;} to{-webkit-transform:scale(1);transform: scale(1);opacity:1;}}
+@-moz-keyframes scaleBig {from{-webkit-transform:scale(1.05);transform: scale(1.05);opacity:0;} to{-webkit-transform:scale(1);transform: scale(1);opacity:1;}}
+
+@keyframes scaleSmallOut {from{-webkit-transform:scale(1);transform: scale(1);opacity:1;} to{-webkit-transform:scale(1.05);transform: scale(1.05);opacity:0;}}
+@-webkit-keyframes scaleBigOut {from{-webkit-transform:scale(1);transform: scale(1);opacity:1;} to{-webkit-transform:scale(1.05);transform: scale(1.05);opacity:0;}}
+@-moz-keyframes scaleBigOut {from{-webkit-transform:scale(1);transform: scale(1);opacity:1;} to{-webkit-transform:scale(1.05);transform: scale(1.05);opacity:0;}}
+
 @keyframes grow {from{-webkit-transform:scale(.7);transform: scale(.7);opacity:0;} to{-webkit-transform:scale(1);transform: scale(1);opacity:1;}}
 @-webkit-keyframes grow {from{-webkit-transform:scale(.7);transform: scale(.7);opacity:0;} to{-webkit-transform:scale(1);transform: scale(1);opacity:1;}}
 @-moz-keyframes grow {from{-webkit-transform:scale(.7);transform: scale(.7);opacity:0;} to{-webkit-transform:scale(1);transform: scale(1);opacity:1;}}
@@ -154,6 +168,14 @@ www.paxagency.com
 @keyframes growOut {from{-webkit-transform:scale(1);transform: scale(1);opacity:1;} to{-webkit-transform:scale(.7);transform: scale(.7);opacity:0;}}
 @-webkit-keyframes growOut {from{-webkit-transform:scale(1);transform: scale(1);opacity:1;} to{-webkit-transform:scale(.7);transform: scale(.7);opacity:0;}}
 @-moz-keyframes growOut {from{-webkit-transform:scale(1);transform: scale(1);opacity:1;} to{-webkit-transform:scale(.7);transform: scale(.7);opacity:0;}}
+
+@keyframes "bulge" {0% {opacity:0;-webkit-transform:scale(0.9);transform:scale(0.9);} 50% {-webkit-transform:scale(1.02);transform:scale(1.02);} to {opacity:1;-webkit-transform:scale(1);transform:scale(1);}}
+@-webkit-keyframes "bulge" {0%{opacity:0;-webkit-transform:scale(0.9);transform:scale(0.9);}50%{-webkit-transform:scale(1.02);transform:scale(1.02);}to{opacity:1;-webkit-transform:scale(1);transform:scale(1);}}
+@-moz-keyframes "bulge" {0%{opacity:0;-webkit-transform:scale(0.9);transform:scale(0.9);}50%{-webkit-transform:scale(1.02);transform:scale(1.02);}to{opacity:1;-webkit-transform:scale(1);transform:scale(1);}}
+
+@keyframes bulgeOut {0%{opacity:0;-webkit-transform:scale(1);transform:scale(1);}50%{-webkit-transform:scale(1.02);transform:scale(1.02);}to{opacity:1;-webkit-transform:scale(.9);transform:scale(.9);}}
+@-webkit-keyframes bulgeOut {0%{opacity:0;-webkit-transform:scale(1);transform:scale(1);}50%{-webkit-transform:scale(1.02);transform:scale(1.02);}to{opacity:1;-webkit-transform:scale(.9);transform:scale(.9);}}
+@-moz-keyframes bulgeOut {0%{opacity:0;-webkit-transform:scale(1);transform:scale(1);}50%{-webkit-transform:scale(1.02);transform:scale(1.02);}to{opacity:1;-webkit-transform:scale(.9);transform:scale(.9);}}
 
 @keyframes pulse {0% {opacity: 0.5;} 50% {opacity: 1.0;} 100% {opacity: 0.5;}}
 @-webkit-keyframes pulse {0% {opacity: 0.5;} 50% {opacity: 1.0;} 100% {opacity: 0.5;}}
