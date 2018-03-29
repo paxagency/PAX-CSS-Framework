@@ -181,8 +181,8 @@ input{border-width:1px;}
   	div.row.stay>div,div.grid.stay>div>div{width:auto !important; display:table-cell; padding:5px;}
 	table.list{table-layout:fixed;}
 	table.pad>tbody>tr>td,table.pad>thead>tr>th{ padding:10px;}
-	table.break>thead>tr>th,table.break>thead>tr,table.break>tbody>tr,table.break>thead,table.break>tbody>tr>td,table.break>tbody>tr>th,table.break{display:block;padding:0;width:100%;}
-	table.break>tbody>tr>td,table.break>thead>tr>th{padding:5px 10px; border-bottom:solid thin #ddd;}
+	table.break,table.break>thead,table.break>tbody,table.break>thead>tr,table.break>tbody>tr,table.break>thead>tr>th,table.break>tbody>tr>td,table.break>tbody>tr>th{display:block !important;padding:0;width:100% !important;}
+	table.break>tbody>tr>td,table.break>thead>tr>th{padding:5px 10px;}
 	.button{width:100%;padding:15px 0;display:inline-block;}
 	.button.small{padding:10px 0;}
 	.float,.floatRight{float:none;}
