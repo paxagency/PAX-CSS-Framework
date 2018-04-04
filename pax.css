@@ -143,7 +143,7 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 .shadow.bottom{-webkit-box-shadow: 0px 50px 50px -55px rgba(36, 37, 62, 0.6);-moz-box-shadow: 0px 50px 50px -55px rgba(36, 37, 62, 0.6);box-shadow: 0px 50px 50px -55px rgba(36, 37, 62, 0.6);}
 .shadow.large{-webkit-box-shadow: 10px 10px 118px 0px rgba(0, 0, 0, 0.75);-moz-box-shadow: 10px 10px 118px 0px rgba(0, 0, 0, 0.75);box-shadow: 10px 10px 118px 0px rgba(0, 0, 0, 0.75);}
 
-.black,.grey,.blue,.lightblue,.aqua,.green,.yellow,.orange,.red,.pink,.purple{color:#fff;}
+.black,.grey,.blue,.lightblue,.aqua,.green,.yellow,.orange,.red,.pink,.purple,.grad{color:#fff;}
 .blue{background:#0061ff;}.blue.text{color:#0061ff;background:none}.blue.border{border:solid 2px #0061ff;}
 .lightblue{background:#00c8ff;} .lightblue.text{color:#00c8ff;background:none} .lightblue.border{border:solid 2px #00c8ff;}
 .aqua{background:#00bab3;} .aqua.text{color:#00bab3;background:none} .aqua.border{border:solid 2px #00bab3;}
@@ -156,6 +156,7 @@ table.pad > tbody > tr > td,table.pad > thead > tr > th{padding:20px;}
 .black{background:#000;} .black.text{color:#000;background:none} .black.border{border:solid 2px #666;}
 .grey{background:#89908e;} .grey.text{color:#89908e;background:none} .grey.border{border:solid 2px #d2d9d7;}
 .white{background:#fff;color:#555;} .white.text{color:#fff;background:none} .white.border{border:solid 2px #fff;}
+.grad{background:linear-gradient(45deg,#8d9ec5,#415fa5);}
 .grad.blue{background:linear-gradient(45deg,#002aff,#00c8ff);}
 .grad.lightblue{background:linear-gradient(45deg,#00c8ff,#f2fcfe);}
 .grad.purple{background: linear-gradient(45deg,#1d1fb0,#c100ff);}
