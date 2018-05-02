@@ -18,6 +18,10 @@ www.paxagency.com
 /*EFFECTS*/
 .animate.fade,.animate.fade-in { -webkit-animation:fadeIn;-moz-animation:fadeIn;animation:fadeIn;}
 .animate.fade-out { -webkit-animation:fadeOut;-moz-animation:fadeOut;animation:fadeOut;}
+.animate.move-top {-webkit-animation:moveTop;-moz-animation:moveTop;animation:moveTop;}
+.animate.move-left {-webkit-animation:moveLeft;-moz-animation:moveLeft;animation:moveLeft;}
+.animate.move-right {-webkit-animation:moveRight;-moz-animation:moveRight;animation:moveRight;}
+.animate.move-bottom {-webkit-animation:moveBottom;-moz-animation:moveBottom;animation:moveBottom;}
 .animate.slide-top {-webkit-animation:slideTop;-moz-animation:slideTop;animation:slideTop;}
 .animate.slide-left {-webkit-animation:slideLeft;-moz-animation:slideLeft;animation:slideLeft;}
 .animate.slide-right {-webkit-animation:slideRight;-moz-animation:slideRight;animation:slideRight;}
@@ -36,13 +40,12 @@ www.paxagency.com
 .animate.grow-out { -webkit-animation:growOut;-moz-animation:growOut;animation:growOut;}
 .animate.bulge { -webkit-animation:bulge;-moz-animation:bulge;animation:bulge;}
 .animate.bulge-out { -webkit-animation:bulgeOut;-moz-animation:bulgeOut;animation:bulge;}
-
 .animate.bounce {-webkit-animation: bounce .5s forwards;animation: bounce .5s forwards}
 .animate.pulse {-webkit-animation: pulse 1s ease-out;-webkit-animation-iteration-count: infinite;opacity: 0.5;}
 .animate.shake {-webkit-animation: shake .5s forwards;animation: shake .5s forwards}
 
 /*DEFAULTS*/
-.animate.scale-small,.animate.scale-small-out,.animate.bulge,.animate.bulge-out,.animate.slide-top,.animate.grow,.animate.grow-out,.animate.scale-big,.animate.scale-big-out,.animate.scale-out,.animate.scale,.animate.fade-in,.animate.slide,.animate.slide-left,.animate.slide-right,.animate.slide-bottom,.animate.fade,.animate.fade-out,.animate.slide-top-out,.animate.slide-bottom-out,.animate.slide-left-out,.animate.slide-right-out {
+.animate.move-left,.animate.move-right,.animate.move-bottom,.animate.move-top,.animate.scale-small,.animate.scale-small-out,.animate.bulge,.animate.bulge-out,.animate.slide-top,.animate.grow,.animate.grow-out,.animate.scale-big,.animate.scale-big-out,.animate.scale-out,.animate.scale,.animate.fade-in,.animate.slide,.animate.slide-left,.animate.slide-right,.animate.slide-bottom,.animate.fade,.animate.fade-out,.animate.slide-top-out,.animate.slide-bottom-out,.animate.slide-left-out,.animate.slide-right-out {
   position:relative;
   opacity:0;
   -webkit-animation-duration:1s;
@@ -51,6 +54,7 @@ www.paxagency.com
   -webkit-animation-fill-mode:forwards;
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
+  animation-timing-function:cubic-bezier(0.75, 0, 0.25, 1);
 }
 .animate.bulge-out,.animate.scale-small-out,.animate.grow-out,.animate.scale-big-out,.animate.scale-out,.animate.fade-out,.animate.slide-top-out,.animate.slide-left-out,.animate.slide-right-out,.animate.slide-bottom-out{opacity:1;}
 .animate.fade-in,.animate.fade-out,.animate.fade,.animate.scale-top-out,.animate.scale-right-out,.animate.scale-left-out,.animate.scale-bottom-out {animation-timing-function:ease-in;}
@@ -104,6 +108,22 @@ www.paxagency.com
 @-webkit-keyframes fadeOut { from { opacity:1; z-index: 0;} to { opacity:0; z-index: -1;} }
 @-moz-keyframes fadeOut { from { opacity:1; z-index: 0;} to { opacity:0; z-index: -1;} }
 @keyframes fadeOut { from { opacity:1; z-index: 0;} to { opacity:0;z-index: -1;}}
+
+@keyframes moveTop {from{-webkit-transform: translateY(-25px);transform: translateY(-25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
+@-webkit-keyframes slideTop {from{-webkit-transform: translateY(-25px);transform: translateY(-25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
+@-moz-keyframes slideTop {from{-webkit-transform: translateY(-25px);transform: translateY(-25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
+
+@keyframes moveLeft {from{ -webkit-transform: translateX(-25px);transform: translateX(-25px);opacity:0;} to{translateX(0%);transform: translateX(0%);opacity:1;}}
+@-webkit-keyframes slideLeft {from{ -webkit-transform: translateX(-25px);transform: translateX(-25px);opacity:0;} to{translateX(0%);transform: translateX(0%);opacity:1;}}
+@-moz-keyframes slideLeft{from{ -webkit-transform: translateX(-25px);transform: translateX(-25px);opacity:0;} to{translateX(0%);transform: translateX(0%);opacity:1;}}
+
+@keyframes moveRight {from{-webkit-transform: translateX(25px);transform: translateX(25px);opacity:0;} to{translateX(0%);transform: translateX(0%);;opacity:1;}}
+@-webkit-keyframes slideRight {from{-webkit-transform: translateX(25px);transform: translateX(25px);opacity:0;} to{translateX(0%);transform: translateX(0%);;opacity:1;}}
+@-moz-keyframes slideRight {from{-webkit-transform: translateX(25px);transform: translateX(25px);opacity:0;} to{translateX(0%);transform: translateX(0%);;opacity:1;}}
+
+@keyframes moveBottom {from{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
+@-webkit-keyframes moveBottom {from{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
+@-moz-keyframes moveBottom {from{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
 
 @keyframes slideTop {from{-webkit-transform: translateY(-100%);transform: translateY(-100%);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
 @-webkit-keyframes slideTop {from{-webkit-transform: translateY(-100%);transform: translateY(-100%);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
