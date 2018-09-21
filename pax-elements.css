@@ -116,8 +116,7 @@ ul.form > li {border-bottom:solid 1px #ccc;position: relative;display:table;widt
 ul.form > li:first-child {border-top:solid 1px #ccc;}
 ul.form > li > div {display:table-cell;border-right:solid 1px #ccc;position: relative;vertical-align: top;}
 ul.form > li > div:last-child {border-right:none;}
-ul.form > li input[type='email'],ul.form > li input[type='number'],ul.form > li input[type='password'],ul.form > li input[type='search'],ul.form > li input[type='tel'],ul.form > li input[type='text'],ul.form > li input[type='url'],ul.form > li input[type='color'],ul.form > li input[type='date'],ul.form > li input[type='month'],ul.form > li input[type='week'],ul.form > li input[type='datetime'],ul.form > li input[type='datetime-local'],ul.form > li input:not([type]), ul.form > li select
- {
+ul.form > li input[type='email'],ul.form > li input[type='number'],ul.form > li input[type='password'],ul.form > li input[type='search'],ul.form > li input[type='tel'],ul.form > li input[type='text'],ul.form > li input[type='url'],ul.form > li input[type='color'],ul.form > li input[type='date'],ul.form > li input[type='month'],ul.form > li input[type='week'],ul.form > li input[type='datetime'],ul.form > li input[type='datetime-local'],ul.form > li input:not([type]), ul.form > li select {
     border:none; 
     padding:30px 10px 5px 10px; 
     font-size:21px;
@@ -137,10 +136,10 @@ ul.form > li label.label {
 	font-weight: 400;
 	font-size: 14px;
 	color: #9c9da6;
-    width: 100%;
-    height:30px;   
-    z-index: 1; 
-    overflow:hidden;
+	width: 100%;
+	height:30px;   
+	z-index: 1; 
+	overflow:hidden;
 }
 @media screen and (max-width: 735px){
     ul.form.break > li > div{display:block !important;  border:none;border-bottom:solid 1px #ccc;}
