@@ -1,27 +1,18 @@
-/***************************************
-****************************************
-8888888b.     d8888Y88b   d88P
-888   Y88b   d88888 Y88b d88P
-888    888  d88P888  Y88o88P
-888   d88P d88P 888   Y888P
-8888888P" d88P  888   d888b
-888      d88P   888  d88888b
-888     d8888888888 d88P Y88b
-888    d88P     888d88P   Y88b
-
-CSS Animate V 1.0
-Copyright 2017 PAXagency
-Created by Albert Kiteck
-www.paxagency.com
-****************************************
-****************************************/
-/*EFFECTS*/
+/******************************/
+/****** PAX ANIMATE 1.0.2 *****/
+/***** docs.paxagency.com *****/
+/******************************/
 .animate.fade,.animate.fade-in { -webkit-animation:fadeIn;-moz-animation:fadeIn;animation:fadeIn;}
 .animate.fade-out { -webkit-animation:fadeOut;-moz-animation:fadeOut;animation:fadeOut;}
 .animate.move-top {-webkit-animation:moveTop;-moz-animation:moveTop;animation:moveTop;}
 .animate.move-left {-webkit-animation:moveLeft;-moz-animation:moveLeft;animation:moveLeft;}
 .animate.move-right {-webkit-animation:moveRight;-moz-animation:moveRight;animation:moveRight;}
 .animate.move-bottom {-webkit-animation:moveBottom;-moz-animation:moveBottom;animation:moveBottom;}
+.animate.move-top-out {-webkit-animation:moveTopOut;-moz-animation:moveTopOut;animation:moveTopOut;}
+.animate.move-left-out {-webkit-animation:moveLeftOut;-moz-animation:moveLeftOut;animation:moveLeftOut;}
+.animate.move-right-out {-webkit-animation:moveRightOut;-moz-animation:moveRightOut;animation:moveRightOut;}
+.animate.move-bottom-out {-webkit-animation:moveBottomOut;-moz-animation:moveBottomOut;animation:moveBottomOut;}
+
 .animate.slide-top {-webkit-animation:slideTop;-moz-animation:slideTop;animation:slideTop;}
 .animate.slide-left {-webkit-animation:slideLeft;-moz-animation:slideLeft;animation:slideLeft;}
 .animate.slide-right {-webkit-animation:slideRight;-moz-animation:slideRight;animation:slideRight;}
@@ -99,6 +90,7 @@ www.paxagency.com
 .animate.ease-back,.animate.ease-back-out {animation-timing-function:cubic-bezier(0.175, 0.885, 0.32, 1.275);}
 .animate.ease-back-in {animation-timing-function:cubic-bezier(0.6, -0.28, 0.735, 0.045);}
 .animate.ease-back-in-out {animation-timing-function:cubic-bezier(0.68, -0.55, 0.265, 1.55);}
+.preload * {animation-play-state: paused !important;-webkit-transition: none !important;-moz-transition: none !important;-ms-transition: none !important;-o-transition: none !important;}
 
 /*ANIMATIONS*/
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -124,6 +116,23 @@ www.paxagency.com
 @keyframes moveBottom {from{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
 @-webkit-keyframes moveBottom {from{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
 @-moz-keyframes moveBottom {from{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
+
+@keyframes moveTopOut {from{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;} to{-webkit-transform: translateY(-25px);transform: translateY(-25px);opacity:0;}}
+@-webkit-keyframes moveTopOut {from{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;} to{-webkit-transform: translateY(-25px);transform: translateY(-25px);opacity:0;}}
+@-moz-keyframes moveTopOut {from{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;} to{-webkit-transform: translateY(-25px);transform: translateY(-25px);opacity:0;}}
+
+@keyframes moveLeftOut {from{ -webkit-transform: translateX(0%);transform: translateX(0%);opacity:1;} to{translateX(-25px);transform: translateX(-25px);opacity:0;}}
+@-webkit-keyframes moveLeftOut {from{ -webkit-transform: translateX(0%);transform: translateX(0%);opacity:1;} to{translateX(-25px);transform: translateX(-25px);opacity:0;}}
+@-moz-keyframes moveLeftOut {from{ -webkit-transform: translateX(0%);transform: translateX(0%);opacity:1;} to{translateX(-25px);transform: translateX(-25px);opacity:0;}}
+
+@keyframes moveRightOut {from{ -webkit-transform: translateX(0%);transform: translateX(0%);opacity:1;} to{translateX(25px);transform: translateX(25px);opacity:0;}}
+@-webkit-keyframes moveRightOut {from{ -webkit-transform: translateX(0%);transform: translateX(0%);opacity:1;} to{translateX(25px);transform: translateX(25px);opacity:0;}}
+@-moz-keyframes moveRightOut {from{ -webkit-transform: translateX(0%);transform: translateX(0%);opacity:1;} to{translateX(25px);transform: translateX(25px);opacity:0;}}
+
+@keyframes moveBottomOut {from{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;} to{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;}}
+@-webkit-keyframes moveBottomOut {from{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;} to{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;}}
+@-moz-keyframes moveBottomOut {from{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;} to{-webkit-transform: translateY(25px);transform: translateY(25px);opacity:0;}}
+
 
 @keyframes slideTop {from{-webkit-transform: translateY(-100%);transform: translateY(-100%);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
 @-webkit-keyframes slideTop {from{-webkit-transform: translateY(-100%);transform: translateY(-100%);opacity:0;} to{-webkit-transform: translateY(0%);transform: translateY(0%);opacity:1;}}
