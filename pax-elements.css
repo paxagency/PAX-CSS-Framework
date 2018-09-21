@@ -117,16 +117,16 @@ ul.form > li:first-child {border-top:solid 1px #ccc;}
 ul.form > li > div {display:table-cell;border-right:solid 1px #ccc;position: relative;vertical-align: top;}
 ul.form > li > div:last-child {border-right:none;}
 ul.form > li input[type='email'],ul.form > li input[type='number'],ul.form > li input[type='password'],ul.form > li input[type='search'],ul.form > li input[type='tel'],ul.form > li input[type='text'],ul.form > li input[type='url'],ul.form > li input[type='color'],ul.form > li input[type='date'],ul.form > li input[type='month'],ul.form > li input[type='week'],ul.form > li input[type='datetime'],ul.form > li input[type='datetime-local'],ul.form > li input:not([type]), ul.form > li select {
-    border:none; 
-    padding:30px 10px 5px 10px; 
-    font-size:21px;
-    margin:0;
-    position: relative;
-    border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;
+	border:none; 
+	padding:30px 10px 5px 10px; 
+	font-size:21px;
+	margin:0;
+	position: relative;
+	border-radius:0;-webkit-border-radius:0;-moz-border-radius:0;
 }
 ul.form input:focus,ul.form textarea:focus,ul.form select:focus {
-    box-shadow: 0px 1px 0px 0px blue,0px -1px 0px 0px  blue;
-    background-color:#f7f9ff;
+	box-shadow: 0px 1px 0px 0px blue,0px -1px 0px 0px  blue;
+	background-color:#f7f9ff;
 }
 ul.form > li input.error {background: #ffe3e3 !important;color: #c14545;}
 ul.form > li textarea {text-align:left;margin-bottom:-9px; border:none;line-height:1.5em;font-size:16px;padding:30px 10px; min-height:100px;background:none;}
@@ -142,10 +142,10 @@ ul.form > li label.label {
 	overflow:hidden;
 }
 @media screen and (max-width: 735px){
-    ul.form.break > li > div{display:block !important;  border:none;border-bottom:solid 1px #ccc;}
-    ul.form.break > li > div:last-child{border:none;}
-    ul.form.break > li{border:none;border-bottom:solid 1px #ccc;}
-    ul.form.break {border-top:solid 1px #ccc;}
+	ul.form.break > li > div{display:block !important;  border:none;border-bottom:solid 1px #ccc;}
+	ul.form.break > li > div:last-child{border:none;}
+	ul.form.break > li{border:none;border-bottom:solid 1px #ccc;}
+	ul.form.break {border-top:solid 1px #ccc;}
 }
 
 /*** NAV ***/
