@@ -23,7 +23,7 @@ p.sm,ul.sm,ol.lg,blockquote.sm,footer.sm,table.sm{font-size:13px;}
 h1.lg{font-size:5em;letter-spacing:-2.5px;}h2.lg{font-size:3.5em;letter-spacing:-1px;}h3.lg{font-size:3em;}h4.lg{font-size:2.5em;}h5.lg{font-size:2em;}
 
 /*FORM*/
-input[type='email'],input[type='number'],input[type='password'],input[type='search'],input[type='tel'],input[type='text'],input[type='url'],input[type='color'],input[type='date'],input[type='month'],input[type='week'],input[type='datetime'],input[type='datetime-local'],input:not([type]),textarea,select{
+input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio]),textarea,select{
 	border: 1px solid #ccc;
 	background:none;
 	padding: 10px 7px;
@@ -36,7 +36,8 @@ input[type='email'],input[type='number'],input[type='password'],input[type='sear
 	appearance:none;-webkit-appearance:none;-moz-appearance:none;
 	transition: all 0.2s linear; -moz-transition: all linear 0.2s;
 }
-input:focus,textarea:focus,select:focus {outline: 0;box-shadow: 0px 0px 0px 1px blue;background-color:#f7f9ff;}
+
+input:not([type=submit]):not([type=file]):not([type=checkbox]):not([type=radio]):focus,textarea:focus,select:focus {outline: 0;box-shadow: 0px 0px 0px 1px blue;background-color:#f7f9ff;}
 select {
     outline:none; padding-right: 40px;
     background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 29 14" width="37"><path fill="%23d1d1d1" d="M9.37727 3.625l5.08154 6.93523L19.54036 3.625"/></svg>') center right no-repeat;
