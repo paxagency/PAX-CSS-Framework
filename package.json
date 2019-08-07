@@ -5,6 +5,6 @@
     "license": "MIT",
     "author": "Albert Kiteck <albert@paxagency.com>",
     "description": "Minimal & Ligthweight CSS Framework",
-    "style":"pax.css"
+    "style":"dist/pax.css"
 }
 
