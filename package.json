@@ -1,0 +1,10 @@
+{
+    "name": "PAX-CSS-Framework",
+    "version": "0.0.2",
+    "homepage": "http://docs.paxagency.com/css",
+    "license": "MIT",
+    "author": "Albert Kiteck <albert@paxagency.com>",
+    "description": "Minimal & Ligthweight CSS Framework",
+    "style":"pax.css"
+}
+
