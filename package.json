@@ -1,14 +1,11 @@
 {
     "name": "pax-css",
-    "version": "0.0.4",
+    "version": "1.0.2",
     "homepage": "http://docs.paxagency.com/css",
     "license": "MIT",
     "author": "Albert Kiteck <albert@paxagency.com>",
     "description": "Pax CSS Framework: Minimal & Ligthweight CSS Framework",
     "style": "dist/pax.css",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "repository": {
       "type": "git",
       "url": "git+https://github.com/paxagency/PAX-CSS-Framework.git"
